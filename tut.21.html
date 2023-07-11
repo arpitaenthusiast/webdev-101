@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> css variables/ custom properties</title>
+    <style>
+        .Box {
+            --boxcolor: pink;
+            width: 200px;
+            height: 200px;
+            background-color: var(--boxcolor);
+            border: 2px solid red;
+            box-shadow: 3px 3px plum;
+            margin: 2px 9px;
+        }
+        
+        .Container {
+            --boxcolor: pink;
+            display: flex;
+            background-color: var(--boxcolor);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="Box"></div>
+        <div class="Box"></div>
+        <div class="Box"></div>
+
+    </div>
+</body>
+
+</html>
